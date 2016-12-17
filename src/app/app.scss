@@ -15,22 +15,44 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-$navy: #0C2340;
-$gold: #C99700;
+$navy: #0C233F;
+$gold: #C7972B;
+$blue: #0069AA;
+$gray: #e6e7e8;
+$red: #bf311a;
+$green: #00853f;
+$yellow: #f3d336;
 
 img {
 	border-radius: 5px;
 }
 
-h3 {
-	color: #42f489;
-	/*background-color: $gold;*/
+h3, h4 {
+	color: $gold;
+	text-align: center;
+	width: 100%;
 }
 
 ion-content {
 	background-color: $navy !important;
 }
 
+.sideMenu {
+	/*background-color: $blue !important;*/
+	background-image: url('../assets/bluePattern.png');
+	background-size: cover;
+}
+
+.menuButton {
+	background-color: $gray !important;
+	color: $navy !important;
+	height: 50px;
+}
+
+ion-title, .header-title {
+	color: $navy !important;
+}
+
 p {
-	color: white;
+	color: $gray;
 }

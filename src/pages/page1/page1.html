@@ -1,31 +1,146 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>ACE Home</ion-title>
-  </ion-navbar>
+<ion-navbar>
+<button ion-button menuToggle>
+	<ion-icon name="menu"></ion-icon>
+</button>
+<ion-title>ACE Home</ion-title>
+</ion-navbar>
 </ion-header>
 
 <ion-content>
-	<img src="../../assets/aceHome.jpg">
-	<div padding>
-		<h4>Alliance for Catholic Education</h4>
+<div id="topTwoThirds" style="height: 67%; background-image: url('../../assets/aceHome.jpg'); background-size: cover;">
+	<div id="topThird" style="height: 50%;">
+		<div padding style="background-color: #0C233F; opacity: .7; height: 50px;">
+			<h4>Alliance for Catholic Education</h4>
+		</div>
 	</div>
-	<!--
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-  -->
+	<div id="middleThird" style="
+		height: 50%;
+		display: table;
+		">
+		<div id="leftBox" style="
+			width: 50%; 
+			height: 50%; 
+			display: table-cell;
+			position: relative;
+			">
+			<div 
+				style="
+				display:inline-block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				">
+				<div  style="
+					box-shadow: 1px 1px 5px black;					
+					border-radius: 50%;
+					width: 100%;
+					">
+					<img src="../../assets/ace_logo_color_300dpi.jpg " width="150" style="border-radius: 50%;"/>
+				</div>
+			</div>
+		</div>
+		<div id="rightBox" style="
+			display: table-cell;
+			position: relative;
+			color: white;
+			">
+			<div style="
+				margin: 10px;
+				padding: 10px;
+				background-color: #0C233F;
+				opacity: .8;
+				">
+				Some quote about ACE being super awesome here, maybe a bible verse ~Madelyn
+			</div>
+		</div>
+	</div>
+</div>
+<div  
+	id="bottomThird" style="
+	height: 33%; 
+	width: 100%;
+	box-shadow: 0px 0px 5px black;
+	color: white;
+	display: table;
+	font-size: 22px;
+	">
+	<div style="
+		width: 50%!important; 
+		display: table-cell;">
+		<div padding id="teaching" style="
+			height: 33%;
+			width: 100%;
+			margin: 0 auto;
+			display: table;
+			">
+			<div style="display: table-cell;
+				vertical-align: middle;">
+				<i class="icon ion-ios-book"></i>
+				teaching
+			</div>
+		</div>
+		<div padding id="spirituality" style="
+			height: 33%;
+			width: 100%;
+			display: table;
+			">
+			<div style="display: table-cell;
+				vertical-align: middle;">
+				<i class="icon ion-ios-heart"></i>
+				spirituality
+			</div>
+		</div>
+		<div padding id="community" style="
+			height: 34%;
+			width: 100%;
+			display: table;
+			">
+			<div style="display: table-cell;
+				vertical-align: middle;">
+				<i class="icon ion-ios-home"></i>
+				community
+			</div>
+		</div>
+	</div>
+	<div style="
+			background-color: gray;
+			height: 100%;
+		">
+		<div style="
+			box-shadow: 0px 0px 5px black;
+			color: white;
+			font-size: 22px;
+			">
+		</div>
+	</div>
+</div>
 
-  <!--<button ion-button secondary menuToggle>Menu</button>-->
-  <!--
-  <div style="align: center; width: 100%; margin: 0 auto;">
-	  <div style="display: inline-block;">
-		  <button ion-button secondary ng-click="">Teaching</button>
-		  <button ion-button primary ng-click="">Spirituality</button>
-		  <button ion-button primary ng-click="">Community</button>
-	  </div>
-  </div>
-  -->
+
+<div padding style="
+	background-image: url('../../assets/navy-pattern.png');
+	background-size: cover;
+	height: 300px;
+	">
+	<button ion-button primary menuToggle>Blog</button>
+	<button ion-button primary menuToggle>Apply to ACE</button>
+</div>
+
+<!--
+<p>
+If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
+</p>
+-->
+
+<!--<button ion-button secondary menuToggle>Menu</button>-->
+<!--
+<div style="align: center; width: 100%; margin: 0 auto;">
+	<div style="display: inline-block;">
+		<button ion-button secondary ng-click="">Teaching</button>
+		<button ion-button primary ng-click="">Spirituality</button>
+		<button ion-button primary ng-click="">Community</button>
+	</div>
+</div>
+-->
 </ion-content>
